@@ -5,48 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Crystal Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="Assets/CSS/style.css" />
+    
 
    
 </head>
 <body>
-    <div class="game">
+    <div class="game" >
         <header>
             <h1>Crystal Game</h1>
         </header>
-        <div id="instructions">
-            <p>Instructions: Lorem, ipsum dolor sit amet consectetur adipisicing tis praesentium, aut, reiciendis dolor! Aliquid sit voluptas porro est.</p>
-            <p>elit. Harum, soluta esse. Illo blanditiis consectetur velit iusto enim officia assumenda repudiandae verita</p>
-          </div>
+        <div id="instructions" class="container center">
+            <p>Instructions: You will be given a randomly generated number when the game begins. The crystals at the bottom also have a randomly generated number.
+            The goal of the game is to get your number to equal the randomly generated number by clicking on the crystals. If your number goes over the generated one, you lose!</p>
+        </div>
 
-          <div id="content">
-            <div>
-                <p>Number to get:</p>
-                <div>0</div>
+        <div id="content" class="container center">
+            <div class="contHalf">
+                <h3>Number to get:</h3>
+                <p id="gameNum" class="score" >0</p>
             </div>
-            <div>
-                <p>Current number:</p>
-                <div>0</div>
+            <div class="contHalf">
+                <h3>Current number:</h3>
+                <p id="playerNum" class="score">0</p>
             </div>
-            <hr>
-            <div>
-                <div>
-                    <img width=250 height=250 src="Assets/Images/gem-emerald.jpg">
-                </div>
-                <div>
-                    <img width=250 height=250 src="Assets/Images/gem-ruby.jpg">
-                </div>
-                <div>
-                    <img width=250 height=250 src="Assets/Images/gem-sapphire.jpg">
-                </div>
-                <div>
-                    <img width=250 height=250 src="Assets/Images/sapphire.jpg">
+         
+            <div id="wins" class="clearL stat">wins: 0</div>
+            <div id="losses" class="stat">losses: 0</div>
+          
+            <div id="buttonBar">
+                <div id="center">
+                    <div class="crystal clearL">
+                        <img src="Assets/Images/gem-emerald.jpg">
+                    </div>
+                    <div class="crystal">
+                        <img src="Assets/Images/gem-ruby.jpg">
+                    </div>
+                    <div class="crystal">
+                        <img src="Assets/Images/gem-sapphire.jpg">
+                    </div>
+                    <div class="crystal">
+                        <img src="Assets/Images/sapphire.jpg">
+                    </div>
                 </div>
             </div>
 
 
-          </div>
+        </div>
 
 
     </div>
